@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.java.AdminDeleteProduct"
+            prefHeight="600.0" prefWidth="700.0">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="250.0" layoutY="70.0">
+        <!-- Image above the first heading -->
+        <ImageView>
+            <image>
+                <Image url="@Logo.png" />
+            </image>
+            <fitWidth>150.0</fitWidth>
+            <fitHeight>150.0</fitHeight>
+        </ImageView>
+
+        <GridPane alignment="CENTER" hgap="10" vgap="10">
+            <Label text="Delete Product Page" style="-fx-font-size: 18; -fx-font-weight: 900; -fx-font-family: 'Montserrat';" GridPane.columnIndex="1" GridPane.halignment="CENTER"/>
+
+            <Label text="Product ID:" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextField fx:id="productIdField" GridPane.columnIndex="1" GridPane.rowIndex="3" maxWidth="150" GridPane.halignment="CENTER"/>
+                        <Label fx:id="productIdLabel" text="" style="-fx-text-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+            <Button text="Confirm" onAction="#handleConfirmButton" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.halignment="CENTER"/>
+
+            <!-- Hidden label used to get a reference in the controller -->
+            <Label fx:id="hiddenLabel" text="" style="-fx-text-fill: red;" GridPane.columnSpan="2" GridPane.rowIndex="8"/>
+
+            <!-- New Back Button -->
+            <Button text="Back" onAction="#handleBackButton"  GridPane.rowIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+        </GridPane>
+    </VBox>
+
+</AnchorPane>

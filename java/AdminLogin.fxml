@@ -1,0 +1,32 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.java.AdminLogin"
+      alignment="CENTER"
+      spacing="10">
+
+    <!-- Add ImageView for the logo -->
+    <ImageView>
+        <image>
+            <Image url="@login.jpeg" />
+        </image>
+        <fitWidth>150.0</fitWidth>
+        <fitHeight>150.0</fitHeight>
+    </ImageView>
+
+    <Label text="Admin Login" style="-fx-font-size: 18; -fx-font-weight: 900; -fx-font-family: 'Montserrat';"/>
+
+    <TextField fx:id="usernameField" promptText="Username" style="-fx-pref-width: 200; -fx-pref-height: 30; -fx-max-width: 200;"/>
+    <PasswordField fx:id="passwordField" promptText="Password" style="-fx-pref-width: 200; -fx-pref-height: 30; -fx-max-width: 200;"/>
+    <Button text="Login" onAction="#handleLoginButton" style="-fx-pref-width: 100; -fx-pref-height: 30;"/>
+    <!-- New Back Button -->
+    <Button text="Back" onAction="#handleBackButton" style="-fx-pref-width: 100; -fx-pref-height: 30;"/>
+    <Label fx:id="errorLabel" text="Please Try Again" style="-fx-text-fill: red;"/>
+</VBox>

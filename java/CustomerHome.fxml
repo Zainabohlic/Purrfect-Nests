@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.java.CustomerHome"
+            prefHeight="500.0" prefWidth="600.0">
+    <!-- Existing content -->
+
+    <VBox alignment="CENTER" spacing="20" layoutX="225.0" layoutY="110.0">
+
+        <HBox alignment="CENTER">
+            <ImageView>
+                <image>
+                    <Image url="@Logo.png" />
+                </image>
+                <fitWidth>150.0</fitWidth>
+                <fitHeight>150.0</fitHeight>
+            </ImageView>
+        </HBox>
+        <!-- Display welcome message -->
+        <Label fx:id="welcomeLabel" styleClass="header-label" style="-fx-font-size: 18; -fx-font-weight: 900; -fx-font-family: 'Montserrat';"/>
+
+        <Button text="Add Product" onAction="#handleAddProductCart"/>
+
+        <!-- Hidden label used to get a reference in the controller -->
+        <Label fx:id="hiddenLabel" text="" style="-fx-opacity: 0;"/>
+        <!-- New Back Button -->
+        <Button text="Back" onAction="#handleBackButton"/>
+    </VBox>
+
+    <!-- AnchorPane to load dynamic content -->
+    <AnchorPane fx:id="contentAnchorPane" layoutX="150.0" layoutY="89.0" prefHeight="200.0" prefWidth="300.0"/>
+</AnchorPane>

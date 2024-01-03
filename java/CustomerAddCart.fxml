@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.java.CustomerAddCart"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="20">
+
+        <Label text="Product Information" styleClass="header-label" style="-fx-font-size: 18; -fx-font-weight: 900; -fx-font-family: 'Montserrat';" />
+        <Label fx:id="loggedInUsernameLabel" text="Welcome:" style=" -fx-font-size: 18; -fx-font-weight: 900; -fx-font-family: 'Montserrat';"/>
+        <!-- Display Product Information -->
+        <ListView fx:id="productListView" maxWidth="800" maxHeight="300"  />
+
+        <HBox spacing="10" alignment="CENTER" layoutX="0" layoutY="-20">
+            <!-- Text Boxes for Product Details -->
+            <TextField fx:id="productIdField" promptText="Product ID"/>
+            <TextField fx:id="productNameField" promptText="Product Name"/>
+            <TextField fx:id="quantityField" promptText="Quantity"/>
+
+            <!-- Hidden label used to get a reference in the controller -->
+            <Label fx:id="hiddenLabel" text="Hi" style="-fx-opacity: 0;" />
+
+            <Label fx:id="messageLabel" text="" style="-fx-text-fill: green; -fx-opacity: 0;"/>
+
+
+
+            <!-- Add to Cart Button -->
+            <Button text="Add to Cart" onAction="#handleAddToCartButton"/>
+
+            <!-- Proceed to Payment Button -->
+            <Button text="View Cart" onAction="#handleViewCartButton"/>
+
+            <!-- Proceed to Payment Button -->
+            <Button text="Proceed to Payment" onAction="#handleProceedToPaymentButton"/>
+
+            <!-- Back Button -->
+            <Button text="Back" onAction="#handleBackButton"/>
+        </HBox>
+        <!-- Display Product Information -->
+        <ListView fx:id="productCartView" maxWidth="400" style="-fx-font-family: 'Courier New';" />
+    </VBox>
+    <!-- AnchorPane to load dynamic content -->
+    <AnchorPane fx:id="contentAnchorPane" layoutX="150.0" layoutY="89.0" prefHeight="200.0" prefWidth="300.0"/>
+</AnchorPane>

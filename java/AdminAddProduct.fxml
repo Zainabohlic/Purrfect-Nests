@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.java.AdminAddProduct"
+            prefHeight="600.0" prefWidth="700.0">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="225.0" layoutY="70.0">
+
+        <!-- Image above the first label -->
+        <ImageView>
+            <image>
+                <Image url="@Logo.png" />
+            </image>
+            <fitWidth>150.0</fitWidth>
+            <fitHeight>150.0</fitHeight>
+        </ImageView>
+
+        <!-- GridPane for labels, text fields, and buttons -->
+        <GridPane hgap="10" vgap="10" alignment="CENTER">
+
+            <Label text="Welcome To Admin Add Product Page" style="-fx-font-size: 18; -fx-font-weight: 900; -fx-font-family: 'Montserrat';" GridPane.columnSpan="3"/>
+
+            <Label text="Product ID:" GridPane.rowIndex="1"/>
+            <TextField fx:id="productIdField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Label fx:id="productIdLabel" text="" style="-fx-text-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+
+            <Label text="Product Name:" GridPane.rowIndex="2"/>
+            <TextField fx:id="productNameField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <Label fx:id="productNameLabel" text="" style="-fx-text-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+
+            <Label text="Quantity:" GridPane.rowIndex="3"/>
+            <TextField fx:id="quantityField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Label fx:id="quantityLabel" text="" style="-fx-text-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
+            <Label text="Category:" GridPane.rowIndex="4"/>
+            <TextField fx:id="categoryField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <Label fx:id="categoryLabel" text="" style="-fx-text-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+
+            <Label text="Price:" GridPane.rowIndex="5"/>
+            <TextField fx:id="priceField" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            <Label fx:id="priceLabel" text="" style="-fx-text-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+
+            <Label text="Date:" GridPane.rowIndex="6"/>
+            <TextField fx:id="dateField" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+            <Label fx:id="dateLabel" text="" style="-fx-text-fill: red;" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+
+            <Button text="Confirm" onAction="#handleConfirmButton" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.halignment="CENTER"/>
+
+            <!-- Hidden label used to get a reference in the controller -->
+            <Label fx:id="hiddenLabel" text="" style="-fx-text-fill: red;" GridPane.columnSpan="2" GridPane.rowIndex="8" GridPane.halignment="CENTER"/>
+
+            <!-- New Back Button -->
+            <Button text="Back" onAction="#handleBackButton"  GridPane.rowIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER"/>
+        </GridPane>
+
+    </VBox>
+
+</AnchorPane>
