@@ -1,2 +1,24 @@
 # Purrfect-Nests
 "Purrfect Nest" automates pet inventory management, minimizing errors and reducing manual labor. It offers real-time updates for customers, improving service and order fulfillment. The project aims to generate detailed sales and inventory reports for informed decision-making and assess the feasibility of implementing the system in pet stores.
+
+## Introduction
+Purrfect Nest is an e-commerce project developed for the Software Design and Analysis course. It is implemented in Java with FXML for the frontend and MySQL for the backend. The project features hand-written code without drag-and-drop features.
+
+## Key Features
+
+1. **Admin Panel:**
+   - Add, remove, and view products in the database.
+  
+2. **Customer Interface:**
+   - Add products to the cart.
+   - View and manage the shopping cart.
+   - Proceed with payment.
+
+3. **Database Backup:**
+   - All data is securely stored and backed up in the MySQL database.
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone [YourRepositoryURL]
