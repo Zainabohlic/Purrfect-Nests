@@ -28,5 +28,5 @@ Purrfect Nest is an e-commerce project developed for the Software Design and Ana
 3. Run the project and explore the functionalities.
 
 ## Usage
-For detailed information about the project, refer to the [Project Report](path/to/your/report.pdf).
+For detailed information about the project, refer to the [Project Report](https://github.com/Zainabohlic/Purrfect-Nests/blob/main/21i2453_21i2575_FinalProject_Report.pdf).
 
