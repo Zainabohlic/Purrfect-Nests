@@ -26,3 +26,7 @@ Purrfect Nest is an e-commerce project developed for the Software Design and Ana
 2. Create a MySQL database and update the connection details in DatabaseConnector.java.
 
 3. Run the project and explore the functionalities.
+
+## Usage
+For detailed information about the project, refer to the [Project Report](path/to/your/report.pdf).
+
