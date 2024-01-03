@@ -21,4 +21,8 @@ Purrfect Nest is an e-commerce project developed for the Software Design and Ana
 
 1. Clone the repository:
    ```bash
-   git clone [YourRepositoryURL]
+   git clone [(https://github.com/Zainabohlic/Purrfect-Nests)]
+   
+2. Create a MySQL database and update the connection details in DatabaseConnector.java.
+
+3. Run the project and explore the functionalities.
